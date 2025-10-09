@@ -1,85 +1,393 @@
+@font-face {
+    font-family: "apple";
+    src: url(./fonts/sf-pro-display_regular.woff2);
+}
+
 *{
     margin: 0;
     padding: 0;
+    font-family: "Poppins", sans-serif;;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
 }
 
 html, body{
-    width: 100%;
     height: 100%;
+    width: 100%;
 }
 
-#main #nav{
+/* navbar style */
+
+#nav{
+    background: #161617;
     display: flex;
-    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+    gap: 35px;
     align-items: center;
-    padding: 0 30px;
 }
 
-#main #nav  a{
-    margin-right: 20px;
+#nav a{
+    color: #fff;
     text-decoration: none;
-    color: black;
+    font-size: 12px;
 }
 
-#main>h1{
-    font-size: 200px;
+#nav i{
+    font-size: 20px;
+    color: #fff;
+}
+
+/* hero style */
+
+#hero{
+    height: 100%;
+    width: 100%;
     text-align: center;
+    background: url(./images/iphone17sleep.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 5%;
+    color: #fff;
 }
 
-#main #images img{
-    height: 300px;
-    border-radius: 10px;
-    position: absolute;
-    object-fit: cover;
-    object-position: center;
+#hero h1{
+    font-size: 60px;
 }
 
-#fi{
-    bottom: 30%;
-    left: 40%;
-    z-index: -1;
-}
-#si{
-    bottom: 20%;
-    left: 55%;
-    z-index: 1;
-}
-#ti{
-    bottom: 30%;
-    left: 70%;
-    z-index: 0;
+#hero h2{
+    font-size: 30px;
+    font-weight: 300;
 }
 
-#btmleft{
-    position: relative;
-    top: 80px;
-    width: 300px;
-    text-align: justify;
-    padding: 0 30px;
+#btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 30px;
 }
 
-#btmleft h4{
+#hero #btn #learn{
+    background: rgb(6, 128, 251);
+    padding: 10px 15px;
+    border: none;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+#hero #btn #buy{
+    background-color: transparent;
+    padding: 10px 35px;
+    border: none;
+    color: rgb(6, 128, 251);
+    border-radius: 50px;
+    border: 2px solid rgb(6, 128, 251);
+    font-size: 20px;
+}
+
+/* hero1 style */
+
+#hero1{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: url(./images/air.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 5%;
+    color: #000;
+    margin-top: 10px;
+}
+
+#hero1 h1{
+    font-size: 60px;
+}
+
+#hero1 h2{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+#btn1{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+#hero1 #btn1 #learn1{
+    background: rgb(6, 128, 251);
+    padding: 10px 15px;
+    border: none;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+#hero1 #btn1 #buy1{
+    background-color: transparent;
+    padding: 10px 35px;
+    border: none;
+    color: rgb(6, 128, 251);
+    border-radius: 50px;
+    border: 2px solid rgb(6, 128, 251);
+    font-size: 20px;
+}
+
+/* hero2 style */
+
+#hero2{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: url(./images/iphone1-7.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 5%;
+    color: #000;
+    margin-top: 10px;
+}
+
+#hero2 h1{
+    font-size: 60px;
+}
+
+#hero2 h2{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+#btn2{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+#hero2 #btn2 #learn2{
+    background: rgb(6, 128, 251);
+    padding: 10px 15px;
+    border: none;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+#hero2 #btn2 #buy2{
+    background-color: transparent;
+    padding: 10px 35px;
+    border: none;
+    color: rgb(6, 128, 251);
+    border-radius: 50px;
+    border: 2px solid rgb(6, 128, 251);
+    font-size: 20px;
+}
+
+/* hero3 style */
+#hero3{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+    height: 80%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#hero3 #p1{
+    background: url(./images/promo_icloud_plus__d4639vh3tz2a_large_2x.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 50px;
+}
+
+#hero3 #p2{
+    background: url(./images/promo_apple_watch_series_11__b63hxviqvonm_large_2x.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 50px;
+}
+
+#hero3 h1{
+    font-size: 30px;
+}
+
+#hero3 h2{
     font-size: 15px;
-    margin: 5px 0;
+    font-weight: 300;
 }
 
-#btmleft p{
+#pbtn1{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+#hero3 #pbtn1 #plearn1{
+    background: rgb(6, 128, 251);
+    padding: 10px 15px;
+    border: none;
+    color: #fff;
+    border-radius: 50px;
     font-size: 10px;
 }
 
-#btm{
-    position: absolute;
-    bottom: 0;
-    padding: 0 30px;
+#hero3 #pbtn1 #pupgrade1{
+    background-color: transparent;
+    padding: 10px 20px;
+    border: none;
+    color: rgb(6, 128, 251);
+    border-radius: 50px;
+    border: 2px solid rgb(6, 128, 251);
+    font-size: 10px;
+}
+
+#hero3 #pbtn1 #pbuy1{
+    background-color: transparent;
+    padding: 10px 20px;
+    border: none;
+    color: rgb(6, 128, 251);
+    border-radius: 50px;
+    border: 2px solid rgb(6, 128, 251);
+    font-size: 10px;
+}
+
+/* hero4 style */
+#hero4{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+    height: 80%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#hero4 #p1{
+    background: url(./images/promo_airpodspro_3__f6xmza7bglei_large_2x.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 50px;
+}
+
+#hero4 #p2{
+    background: url(./images/promo_ipad_air_avail__6i02t7nujr62_large_2x.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 50px;
+}
+
+#hero4 h1{
+    font-size: 30px;
+}
+
+#hero4 h2{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#pbtn1{
     display: flex;
-    width: 100%;   
-    justify-content: space-between;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 30px;
 }
-#btm h1{
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-    font-weight: 100;
-    margin-bottom: 10px;
+
+#hero4 #pbtn1 #plearn1{
+    background: rgb(6, 128, 251);
+    padding: 10px 15px;
+    border: none;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 10px;
 }
+
+#hero4 #pbtn1 #pupgrade1{
+    background-color: transparent;
+    padding: 10px 20px;
+    border: none;
+    color: rgb(6, 128, 251);
+    border-radius: 50px;
+    border: 2px solid rgb(6, 128, 251);
+    font-size: 10px;
+}
+
+#hero4 #pbtn1 #pbuy1{
+    background-color: transparent;
+    padding: 10px 20px;
+    border: none;
+    color: rgb(6, 128, 251);
+    border-radius: 50px;
+    border: 2px solid rgb(6, 128, 251);
+    font-size: 10px;
+}
+
+/* hero5 style */
+#hero5{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+    height: 80%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#hero5 #p1{
+    background: url(./images/promo_iphone_tradein__bugw15ka691e_large_2x.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 50px;
+}
+
+#hero5 #p2{
+    background: url(./images/promo_apple_card__5cm7draujpey_large_2x.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 50px;
+}
+
+#hero5 h1{
+    font-size: 30px;
+}
+
+#hero5 h2{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#pbtn1{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+#hero5 #pbtn1 #plearn1{
+    background: rgb(6, 128, 251);
+    padding: 10px 15px;
+    border: none;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 10px;
+}
+
+#hero5 #pbtn1 #pupgrade1{
+    background-color: transparent;
+    padding: 10px 20px;
+    border: none;
+    color: rgb(6, 128, 251);
+    border-radius: 50px;
+    border: 2px solid rgb(6, 128, 251);
+    font-size: 10px;
+}
+
+#hero5 #pbtn1 #pbuy1{
+    background-color: transparent;
+    padding: 10px 20px;
+    border: none;
+    color: rgb(6, 128, 251);
+    border-radius: 50px;
+    border: 2px solid rgb(6, 128, 251);
+    font-size: 10px;
+}
+
