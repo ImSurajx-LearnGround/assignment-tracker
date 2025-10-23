@@ -8,13 +8,90 @@
     src: url(./font/Roboto.woff2);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Google Sans";
 }
 
-html, body{
+html,
+body {
     padding: 0;
     margin: 0;
+}
+
+main {
+    section.view1 {
+        width: 100%;
+
+        .notification {
+            padding: 1rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-align: center;
+            color: #fff;
+            background: linear-gradient(124.64deg, #027dfd, #833ef2);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 1.5rem;
+            font-size: 1.5rem;
+            width: 100%;
+
+            .logo {
+                width: 40%;
+
+                img {
+                    max-width: 150px;
+                    width: 100%;
+                }
+            }
+
+            .menu {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+        section.view1 {
+            .nav {
+                .menu {
+                    width: 55%;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    font-weight: 600;
+                    font-size: 0.9rem;
+                    a{
+                        text-decoration: none;
+                        color: #000;
+                        opacity: 0.7;
+                    }
+
+                    .click{
+                        color: #027dfd;
+                        opacity: 1;
+                    }
+                }
+
+                .menu-icon{
+                    display: none;
+                }
+
+                .startBtn{
+                    padding: 12px 30px;
+                    color: #fff;
+                    border-radius: 50px;
+                    background: #027dfd;
+                }
+            }
+        }
+    }
 }
