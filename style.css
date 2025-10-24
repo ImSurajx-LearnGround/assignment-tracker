@@ -358,6 +358,12 @@ main section.view6 .box .btm .btn p {
   main section.view6 .box .btm h1 {
     font-size: 3rem;
   }
+  main section.view7 {
+    padding: 2rem 0;
+  }
+  main section.view7 .box .top {
+    width: 40%;
+  }
 }
 @media (min-width: 1200px) {
   main section.view1 .nav .menu {
