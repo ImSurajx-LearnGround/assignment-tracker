@@ -73,6 +73,35 @@ main section.view2 .hero-para {
   margin: 3rem 0;
   font-size: 2rem;
 }
+main section.view3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+main section.view3 .card {
+  width: 80%;
+  margin: 5rem 0;
+  margin: 1.5rem 0;
+}
+main section.view3 .card hr {
+  height: 0.3rem;
+  border: none;
+  background-color: gray;
+  opacity: 0.2;
+}
+main section.view3 .card img {
+  width: 100%;
+}
+main section.view3 .card .title {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+}
+main section.view3 .card p {
+  font-size: 1rem;
+}
 
 @media (min-width: 600px) {
   main section.view2 {
@@ -99,6 +128,15 @@ main section.view2 .hero-para {
     width: 60%;
     margin: 3rem 0;
     font-size: 2rem;
+  }
+  main section.view3 {
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    gap: 2rem;
+    width: 80%;
+    margin: 0 auto;
+    padding: 3rem 0;
   }
 }
 @media (min-width: 1200px) {
