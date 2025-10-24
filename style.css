@@ -194,6 +194,54 @@ main section.view5 .box .btm .btn button {
   border-radius: 50px;
   color: #fff;
 }
+main section.view6 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+}
+main section.view6 .box {
+  width: 80%;
+}
+main section.view6 .box .top img {
+  width: 100%;
+}
+main section.view6 .box .btm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+main section.view6 .box .btm p {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+main section.view6 .box .btm p:first-child {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+main section.view6 .box .btm h1 {
+  font-size: 2.5rem;
+}
+main section.view6 .box .btm .btn {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+main section.view6 .box .btm .btn button {
+  padding: 10px 40px;
+  border: 2px solid #027dfd;
+  border-radius: 50px;
+  color: #027dfd;
+  background: transparent;
+}
+main section.view6 .box .btm .btn p {
+  padding-bottom: 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
 
 @media (min-width: 600px) {
   main section.view2 {
@@ -282,6 +330,32 @@ main section.view5 .box .btm .btn button {
     font-weight: 600;
   }
   main section.view5 .box .btm h1 {
+    font-size: 3rem;
+  }
+  main section.view6 {
+    width: 100%;
+  }
+  main section.view6 .box {
+    width: 80%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+  }
+  main section.view6 .box .top {
+    width: 50%;
+  }
+  main section.view6 .box .btm {
+    width: 30%;
+  }
+  main section.view6 .box .btm p {
+    font-size: 1.5rem;
+  }
+  main section.view6 .box .btm p:first-child {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  main section.view6 .box .btm h1 {
     font-size: 3rem;
   }
 }
