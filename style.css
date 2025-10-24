@@ -19,6 +19,15 @@ body {
   margin: 0;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main section {
+  max-width: 1900px;
+  margin: 0 auto;
+}
 main section.view1 {
   width: 100%;
 }
@@ -241,6 +250,50 @@ main section.view6 .box .btm .btn p {
   padding-bottom: 1rem;
   font-size: 0.8rem;
   font-weight: 600;
+}
+main section.view8 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+main section.view8 .box {
+  width: 80%;
+  border: 1px solid black;
+  color: #fff;
+  position: relative;
+  border-radius: 2rem;
+  overflow: hidden;
+  background: #042449;
+  z-index: 2;
+}
+main section.view8 .box img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+}
+main section.view8 .box .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  gap: 1rem;
+  z-index: 2;
+  padding: 3.5rem 4rem;
+}
+main section.view8 .box .text button {
+  outline: none;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  border-radius: 50px;
 }
 
 @media (min-width: 600px) {
