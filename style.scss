@@ -96,6 +96,7 @@ main {
         align-items: center;
         justify-content: center;
         width: 100%;
+        margin-top: 3rem;
 
         .card {
             hr {
@@ -123,6 +124,64 @@ main {
             }
 
             margin: 1.5rem 0;
+        }
+    }
+
+    section.view4 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .box {
+            width: 80%;
+
+            .top {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .btm {
+                display: flex;
+                flex-direction: column;
+                gap: 0.8rem;
+
+                p {
+                    font-size: 1.2rem;
+                }
+
+                p:first-child {
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                }
+
+                h1 {
+                    font-size: 2.5rem;
+                }
+
+                .btn {
+                    margin-top: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 1rem;
+
+                    button {
+                        padding: 10px 40px;
+                        border: 2px solid #027dfd;
+                        border-radius: 50px;
+                        color: #027dfd;
+                        background: transparent;
+                    }
+
+                    p {
+                        padding-bottom: 1rem;
+                        font-size: 0.8rem;
+                        font-weight: 600;
+                    }
+                }
+            }
         }
     }
 }
@@ -167,6 +226,44 @@ main {
             width: 80%;
             margin: 0 auto;
             padding: 3rem 0;
+        }
+
+        section.view4 {
+            width: 100%;
+
+            .box {
+                width: 80%;
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                justify-content: space-around;
+                .btm {
+                   
+                    width: 30%;
+                    p {
+                        font-size: 1.5rem;
+                    }
+
+                    p:first-child {
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                    }
+
+                    h1 {
+                        font-size: 3rem;
+                    }
+
+                    .btn{
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        p{
+                           
+                            padding-top: 1rem;
+                        }
+                    }
+                }
+            }
         }
     }
 }
